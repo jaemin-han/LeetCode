@@ -46,10 +46,10 @@ public:
     string make_string()
     {
         string temp = "";
-        for (const int &value : deque)
+        for (auto iter = deque.begin(); iter != deque.end(); ++iter)
         {
-            temp += to_string(value);
-            if (value != deque.back())
+            temp += to_string(*iter);
+            if (iter != deque.end() - 1)
                 temp += "->";
         }
         return temp;
