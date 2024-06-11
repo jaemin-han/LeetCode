@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <limits> // for windows, I dont know why
 
 struct TreeNode
 {
