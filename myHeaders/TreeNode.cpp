@@ -19,14 +19,14 @@ TreeNode *createBinaryTree(const vector<int> &nums)
         TreeNode *current = q.front();
         q.pop();
 
-        if (i < nums.size() && nums[i] != numeric_limits<int>::min())
+        if (i < nums.size() && nums[i] != NULL_NODE)
         {
             current->left = new TreeNode(nums[i]);
             q.push(current->left);
         }
         i++;
 
-        if (i < nums.size() && nums[i] != numeric_limits<int>::min())
+        if (i < nums.size() && nums[i] != NULL_NODE)
         {
             current->right = new TreeNode(nums[i]);
             q.push(current->right);
