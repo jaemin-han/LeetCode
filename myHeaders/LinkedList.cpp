@@ -21,6 +21,9 @@ ListNode *makeListNode(vector<int> nums)
 
 void printListNode(ListNode *node)
 {
+    if (!node)
+        cout << "Empty node..!" << endl;
+
     while (node)
     {
         cout << node->val;
