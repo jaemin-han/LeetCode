@@ -33,3 +33,9 @@
 *.exe
 *.out
 *.app
+
+# Debuging Information File
+*.pdb
+
+# Incremental Link File
+*.ilk
